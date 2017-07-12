@@ -83,9 +83,16 @@ nav a {
 
 .cities {
   display: flex;
-  flex-direction: row;
+  align-items: center;
 }
 
 .city {
-  display: flex;
+  display: block;
+  width: 300px;
+  background-color: black;
+  color: seashell;
+}
+
+.city span {
+  display: block;
 }
