@@ -1,0 +1,91 @@
+/** Tea Cozy by Brian Canizales**/
+
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  /*color: seashell;
+  background-color: black;*/
+  opacity: 0.9;
+  text-align: center;
+}
+
+div {
+  border: 1px solid black;
+}
+
+.content {
+  display: inline;
+}
+
+/* Header */
+
+header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+}
+
+.logo img {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 10px;
+  padding:
+  height: 50px;
+}
+
+nav span {
+  color: seashell;
+}
+
+/* Navigation */
+
+nav a {
+  text-decoration: underline;
+}
+
+/* Our Mission */
+
+.main-img {
+  margin-top: 69px;
+  height: 700px;
+  width: 1200px;
+  display: flex;
+}
+
+.mission {
+
+}
+
+/* Featured - Tea of the Month */
+
+.featured {
+  width: 1000px;
+}
+
+.image {
+  height: 200px;
+  width: 300px;
+}
+
+/* Location */
+
+.location {
+  background-image: url("../images/img-locations-background.jpg");
+  height: 500px;
+  width: 1200px;
+}
+
+.cities {
+  display: flex;
+  flex-direction: row;
+}
+
+.city {
+  display: flex;
+}
