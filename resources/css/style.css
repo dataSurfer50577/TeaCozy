@@ -6,7 +6,6 @@ body {
   font-size: 22px;
   color: seashell;
   background-color: black;
-  /*opacity: 0.9; /* WHERE DOES THIS GO???????? [move to "main" class]*/
   text-align: center;
 }
 
@@ -21,8 +20,8 @@ h4 {
   padding: 10px;
 }
 
-.flex-container {
-  display: block;
+.container {
+  display: flex; /*allows navigation bar on the same line */
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -76,6 +75,7 @@ nav a {
   padding-top: 69px;
   width: 1200px;
   margin: auto; /* centers entire main section */
+  opacity: 0.9
 }
 
 #mission {
@@ -124,7 +124,7 @@ nav a {
   width: 1200px;
 }
 
-#locations .flex-container {
+#locations .container {
   margin: auto;
   width: 1100px;
 }
@@ -135,7 +135,6 @@ nav a {
 }
 
 .city {
-  opacity: 1.0;
   padding: 10px;
   margin: 5px 20px;
   background-color: black;
@@ -148,3 +147,16 @@ nav a {
 .city span {
   display: block;
 }
+
+.container.locations {
+  padding-top: 5px;
+}
+
+
+/* Footer */
+
+footer {
+  text-align: left;
+  padding-left: 20px;
+}
+*/
