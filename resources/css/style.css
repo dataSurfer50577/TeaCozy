@@ -1,35 +1,50 @@
 /** Tea Cozy by Brian Canizales**/
 
 body {
+  margin: 0; /* brings top header all the way to the left */
   font-family: Helvetica;
   font-size: 22px;
-  /*color: seashell;
-  background-color: black;*/
-  opacity: 0.9;
+  color: seashell;
+  background-color: black;
+  /*opacity: 0.9; /* WHERE DOES THIS GO???????? [move to "main" class]*/
   text-align: center;
 }
 
-div {
-  border: 1px solid black;
+a { /* Needed to add color to the default link color of navigation text */
+  color: seashell;
 }
 
-.content {
-  display: inline;
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 10px;
+}
+
+.flex-container {
+  display: block;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* Header */
 
 header {
-  background-color: black;
-  display: flex;
-  align-items: center;
-  position: fixed;
-  z-index: 2;
   width: 100%;
+  position: fixed;
+  z-index: 1;
   height: 69px;
+  background-color: black;
   border-bottom: 1px solid seashell;
+  align-items: center;
 }
 
+header img {
+  height: 50px; /* sizes the Logo to fit the header size.*/
+  padding-left: 10px;
+}
+
+/* *******THIS IS NOT NEEDED******
 .logo img {
   display: flex;
   align-items: center;
@@ -37,10 +52,16 @@ header {
   padding-left: 10px;
   padding:
   height: 50px;
+}  */
+
+nav {
+  text-align: right;
+  flex-grow: 1;
 }
 
 nav span {
-  color: seashell;
+  display: inline-block; /* Combines features of both inline and block elements; can appear next to each other and dimensions can be specified. */
+  padding: 20px 10px; /* Spaces navigation text */
 }
 
 /* Navigation */
@@ -51,34 +72,61 @@ nav a {
 
 /* Our Mission */
 
-.main-img {
-  margin-top: 69px;
-  height: 700px;
+.main {
+  padding-top: 69px;
   width: 1200px;
-  display: flex;
+  margin: auto; /* centers entire main section */
 }
 
-.mission {
+#mission {
+  height: 700px;
+  background-image: url("../images/img-mission-background.jpg"); /* Moved from .main */
+  padding-top: 70px;
+}
 
+#mission .content {
+  margin: auto;
+  background-color: black;
+  width: 100%;
 }
 
 /* Featured - Tea of the Month */
 
-.featured {
+#featured {
   width: 1000px;
+  height: 700px;
+  margin: auto;
+  padding-top: 70px;
 }
 
-.image {
+.item {
+  padding: 5px;
+}
+
+.item img {
   height: 200px;
-  width: 300px;
+  margin: 10px;
+  display: block;
+}
+
+.item span {
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
 }
 
 /* Location */
 
-.location {
+#locations {
   background-image: url("../images/img-locations-background.jpg");
   height: 500px;
   width: 1200px;
+}
+
+#locations .flex-container {
+  margin: auto;
+  width: 1100px;
 }
 
 .cities {
@@ -87,10 +135,14 @@ nav a {
 }
 
 .city {
-  display: block;
-  width: 300px;
+  opacity: 1.0;
+  padding: 10px;
+  margin: 5px 20px;
   background-color: black;
-  color: seashell;
+  flex-basis: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .city span {

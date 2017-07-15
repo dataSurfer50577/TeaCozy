@@ -1,3 +1,5 @@
+<!-- Tea Cozy by Brian Canizales -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,94 +7,109 @@
     <title>Tea Cozy</title>
 
     <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
+    <!--<link rel="stylesheet" href="../TeaCozy[Answer]/styleA.css" type="text/css">-->
 
   </head>
   <body>
 
 <!-- Main Header containing Logo -->
-    <header class="container">
-      <div class="logo">
+    <header class="flex-container"> <!-- Possibly not DIV needed -->
+      <!-- NOT NEEDED <div class="logo"> -->
         <img src="./resources/images/img-tea-cozy-logo.png">
-      </div>
-
 <!-- Navigation Links -->
       <nav>
         <span><a href="#mission">Mission</a></span>
         <span><a href="#featured">Featured Tea</a></span>
-        <span><a href="#location">Locations</a></span>
-
+        <span><a href="#locations">Locations</a></span>
+      </nav>
     </header>
 
 <!-- Main Container with Content -->
-    <div class="content">
-      <div class="main-img">
-        <img src="./resources/images/img-mission-background.jpg">
-        <div class="mission" id="mission">
-          <h1>Our Mission</h1>
-          <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea
-          </h4>
+    <div class="main">
+      <div id="mission" class="flex-container">
+        <!--<img src="./resources/images/img-mission-background.jpg" [moved to CSS]>-->
+        <div class="content"> <!-- "mission-container" id="mission">-->
+          <h2>Our Mission</h2>
+          <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
         </div>
       </div>
 
-    <div class="featured" id="featured">
+<!-- Inventory - Tea of the Month "Store Section"-->
+
+    <div id="featured"> <!-- "store=feature" -Link must be seperate from any other atribute -->
       <h2>Tea of the Month</h2>
-          <h3>What's Steeping at The Tea Cozy?</h3>
-            <div class="tea_month">
-              <img class="image" src="./resources/images/img-berryblitz.jpg">
-              <span>Fall Berry Blitz Tea</span>
+      <h4>What's Steeping at The Tea Cozy?</h4>
+      <div class="flex-container tea_month"> <!-- Added "flex-container" tea_month=items -->
+        <div class="item">
+          <img src="./resources/images/img-berryblitz.jpg">
+          <span>Fall Berry Blitz Tea</span>
+        </div>
 
-              <img class="image" src="./resources/images/img-spiced-rum.jpg">
-              <span>Spiced Rum Tea</span>
+        <div class="item">
+          <img src="./resources/images/img-spiced-rum.jpg">
+          <span>Spiced Rum Tea</span>
+        </div>
 
-              <img class="image" src="./resources/images/img-donut.jpg">
-              <span>Seasonal Donuts</span>
+        <div class="item">
+          <img src="./resources/images/img-donut.jpg">
+          <span>Seasonal Donuts</span>
+        </div>
 
-              <img class="image" src="./resources/images/img-donut.jpg">
-              <span>Myrtle Ave Tea</span>
+        <div class="item">
+          <img src="./resources/images/img-donut.jpg">
+          <span>Myrtle Ave Tea</span>
+        </div>
 
-              <img class="image" src="./resources/images/img-bedford-bizarre.jpg">
-              <span>Bedford Bizarre Tea</span>
-            </div>
+        <div class="item">
+          <img src="./resources/images/img-bedford-bizarre.jpg">
+          <span>Bedford Bizarre Tea</span>
+        </div>
+      </div>
     </div>
 
+<!-- Locations Section -->
 
-    <div class="location" id="location">
-      <h2>Locations</h2>
-      <div class="cities">
+    <div id="locations"> <!-- Link must be seperate from any other atribute -->
+      <h2>Locations</h2> <!-- Added "flex-container" -->
+      <div class="flex-container locations">
 
-        <div class="city">
+        <div class="city"> <!-- city=location -->
           <h3>Downtown</h3>
-          <span>384 West 4th St</span>
-          <span>Suite 108</span>
-          <span>Portland, Maine</span>
+          <p>384 West 4th St</p>
+          <p>Suite 108</p>
+          <p>Portland, Maine</p>
         </div>
 
         <div class="city">
           <h3>East Bayside</h3>
-          <span>3433 Phisherman's Avenue</span>
-          <span>(Northwest Corner)</span>
-          <span>Portland, Maine</span>
+          <p>3433 Phisherman's Avenue</p>
+          <p>(Northwest Corner)</p>
+          <p>Portland, Maine</p>
         </div>
 
         <div class="city">
           <h3>Oakdale</h3>
-          <span>515 Crescent Avenue</span>
-          <span>Second Floor</span>
-          <span>Portland, Maine</span>
+          <p>515 Crescent Avenue</p>
+          <p>Second Floor</p>
+          <p>Portland, Maine</p>
         </div>
       </div>
     </div>
-
-  <div class="contact">
-    <h2>The Tea Cozy</h2>
-    <h5>contact@theteacozy.com</h5>
-    <h5>917-555-8904</h5>
-  </div>
   </div>
 
-  <footer>
-    <h6>copyright The Tea Cozy 2017</h6>
-  </footer>
+<!-- Contacts -->
+
+    <div id="contact">
+      <h2>The Tea Cozy</h2>
+      <h5>contact@theteacozy.com</h5>
+      <h5>917-555-8904</h5>
+    </div>
+
+<!-- Footer -->
+
+    <footer>
+      <h5>copyright The Tea Cozy 2017</h5>
+    </footer>
 
 
   </body>
